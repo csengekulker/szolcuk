@@ -24,5 +24,17 @@ class Szolcuk {
         int oxygen = sc.nextInt();
 
         sc.close();
+
+        if (
+            coal % 6 == 0 &&
+            hydrogen % 12 == 0 &&
+            oxygen % 6 == 0
+        ) {
+            System.out.println("");
+            System.out.println("Lehet glükóz");
+        } else {
+            System.out.println("");
+            System.out.println("Nem lehet glükóz");
+        }
     }
 }
